@@ -8,7 +8,7 @@ function guessing() {
 	echo "PLEASE ENTER YOUR GUESS"
 	read guess
 
-	correct=$(ls -l | wc -l)-1
+	correct=$(ls -al | wc -l)-1
 
 	while [[ $guess -ne $correct ]]
 	do
